@@ -4,7 +4,6 @@ import csv
 from statistics import mean
 from typing import Counter
 budget_data_csv = os.path.join("/Users/jacobcortez/Documents/GitHub/DS_Repos/python_challenge/py_resources/budget_data.csv")
-count_month = 0
 with open(budget_data_csv) as csvfile:
     csv_reader = csv.reader(csvfile, delimiter=",")
 
