@@ -40,22 +40,32 @@ win_percentage_correy = (correy_total_votes / counted_votes) * 100
 win_percentage_li = (li_total_votes / counted_votes) * 100
 win_percentage_tooley = (tooley_total_votes / counted_votes) * 100
 
-
-# Print total votes
-print(counted_votes)
-
+# Print win percentages
+khan_summary_percent = format(win_percentage_khan,'.3f')
+correy_summary_percent = format(win_percentage_correy,'.3f')
+li_summary_percent = format(win_percentage_li,'.3f')
+tooley_summary_percent = format(win_percentage_tooley,'.3f')
 
 # Print candidate votes
-print(khan_total_votes)
-print(correy_total_votes)
-print(li_total_votes)
-print(tooley_total_votes)
+khan_summary_votes = format(khan_total_votes,',d')
+correy_summary_votes = format(correy_total_votes,',d')
+li_summary_votes = format(li_total_votes,',d')
+tooley_summary_votes = format(tooley_total_votes,',d')
 
+# Print title
+print( 'Election Results')
 
-# Print win percentages
-print(win_percentage_khan)
-print(win_percentage_correy)
-print(win_percentage_li)
-print(win_percentage_tooley)
+print('----------------------------')
 
+# Print total votes
+print('Total Votes:  '+ format(counted_votes,',d'))
 
+print('----------------------------')
+
+# Print Candidate Summary
+print('Khan: ' + khan_summary_percent +'%  (' + khan_summary_votes + ')')
+print('Correy: ' + correy_summary_percent +'%  (' + correy_summary_votes + ')')
+print('Li: ' + li_summary_percent +'%  (' + li_summary_votes + ')')
+print("O'Tooley: " + tooley_summary_percent +'%  (' + tooley_summary_votes + ')')
+
+print('----------------------------')
