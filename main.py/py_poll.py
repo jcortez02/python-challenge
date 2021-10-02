@@ -69,3 +69,14 @@ print('Li: ' + li_summary_percent +'%  (' + li_summary_votes + ')')
 print("O'Tooley: " + tooley_summary_percent +'%  (' + tooley_summary_votes + ')')
 
 print('----------------------------')
+
+# Print winner of Election Results
+winner = str(50.000)
+if correy_summary_percent > winner:
+    print('Winner: Correy')
+elif li_summary_percent > winner:
+    print('Winner: Li')
+elif tooley_summary_percent > winner:
+    print("Winner: O'Tooley")
+else: khan_summary_percent > winner
+print('Winner: Khan')
