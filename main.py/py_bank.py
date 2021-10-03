@@ -3,7 +3,7 @@ import os
 import csv
 from statistics import mean
 from typing import Counter
-budget_data_csv = os.path.join("/Users/jacobcortez/Documents/GitHub/DS_Repos/python_challenge/py_resources/budget_data.csv")
+budget_data_csv = os.path.join("python_challenge/py_resources/budget_data.csv")
 with open(budget_data_csv) as csvfile:
     csv_reader = csv.reader(csvfile, delimiter=",")
 

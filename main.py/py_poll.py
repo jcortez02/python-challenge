@@ -3,7 +3,7 @@ import os
 import csv
 from statistics import mean
 from typing import Counter
-poll_data = os.path.join('/Users/jacobcortez/Documents/GitHub/DS_Repos/python_challenge/py_resources/election_data.csv')    
+poll_data = os.path.join('python_challenge/py_resources/election_data.csv')    
 with open (poll_data) as csvfile:
     csv_reader = csv.reader(csvfile, delimiter=",")
 
