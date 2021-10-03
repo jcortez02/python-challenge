@@ -80,3 +80,16 @@ elif tooley_summary_percent > winner:
     print("Winner: O'Tooley")
 else: khan_summary_percent > winner
 print('Winner: Khan')
+
+
+with open('election_results.txt', 'w') as text:
+    text.write("Election Results\n")
+    text.write("---------------------------------------\n")
+    text.write("Total Vote: " + str(counted_votes) + "\n")
+    text.write("---------------------------------------\n")
+    text.write('Khan: ' + khan_summary_percent +'%  (' + khan_summary_votes + "\n")
+    text.write('Correy: ' + correy_summary_percent +'%  (' + correy_summary_votes + "\n")
+    text.write('Li: ' + li_summary_percent +'%  (' + li_summary_votes + "\n")
+    text.write("O'Tooley: " + tooley_summary_percent +'%  (' + tooley_summary_votes + "\n")
+    text.write("---------------------------------------\n")
+    text.write('Winner: Khan')
