@@ -1,0 +1,10 @@
+with open('financial_analysis.txt', 'w') as text:
+    text.write("----------------------------------------------------------\n")
+    text.write("  Financial Analysis"+ "\n")
+    text.write("----------------------------------------------------------\n\n")
+    text.write("    Total Months: " + count_month_str + "\n")
+    text.write("    Total Profits: " + "$" + total_list_str + "\n")
+    text.write("    Average Change: " + '$' + average_change_str + "\n")
+    text.write("    Greatest Increase in Profits: " + str(greatest_increase_date) + " ($" + greatest_increase_str + ")\n")
+    text.write("    Greatest Decrease in Profits: " + str(greatest_decrease_date) + " ($" + greatest_decrease_str + ")\n")
+    text.write("--------------------------------------------------
